@@ -1,10 +1,18 @@
 import './App.css';
 
 import NavBar from './NavBar';
+import Footer from "./Footer";
 
 function App() {
   return (
-      <NavBar />
+      <>
+      <header>        
+        <NavBar />
+      </header>
+      <footer>
+        <Footer />
+      </footer>
+      </>
   );
 }
 
