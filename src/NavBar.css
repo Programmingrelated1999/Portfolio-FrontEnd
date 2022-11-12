@@ -1,0 +1,44 @@
+.navbar{
+    background-color: rgb(255, 255, 255);
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0 2vh;
+    margin: 0 1vh;
+    box-shadow: .4rem .4rem yellow;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo:active{
+    box-shadow: none;
+    transform: translate(0.4rem, 0.4rem);
+}
+
+.logo h1{
+    margin: 1vh;
+}
+
+.navlinks{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 3vh;
+}
+
+a:hover{
+    background-color: yellow;
+}
