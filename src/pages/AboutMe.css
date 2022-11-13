@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about-me div{
+    display: inline-block;
+}
+
+.introduction{
+    margin: 0 0 0 6rem;
+    font-size: 1.6rem;
+}
+
+.introduction h1{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.introduction a{
+    font-size: 1.6rem;
+    margin: 0;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: rgb(112, 234, 255);
+}
+
+.introduction a:hover{
+    background-color: rgb(112, 234, 255);
+}
+
+.yellow-shape{
+    background-color: rgb(255, 255, 188);
+    width: 100vh;
+    height: 80vh;
+    margin: auto;
+    border-radius: 70% 25% 50% 60%;
+    transform: rotate(16);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 16%;
+}

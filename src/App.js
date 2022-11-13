@@ -2,6 +2,7 @@ import './App.css';
 
 import NavBar from './NavBar';
 import Footer from "./Footer";
+import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
       <header>        
         <NavBar />
       </header>
+      <body>
+        <AboutMe />
+      </body>
       <footer>
         <Footer />
       </footer>

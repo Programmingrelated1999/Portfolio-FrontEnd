@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
   return (
     <div className = "footer">
-      <p>Thanks for you visit today! &copy; Kaung 2022</p>
+      <p>Thank you for your visit today! &copy; Kaung 2022</p>
       <div className = "footer-right">
         <p>Checkout my other profiles</p>
         <GitHubIcon className = "profile-links" fontSize='large'/>
