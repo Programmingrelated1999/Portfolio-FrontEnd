@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+
+.projects{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+}
+
+.circle-yellow{
+    width: 4rem;
+}
+
+.projects h1{
+    font-size: 4rem;
+    margin: 0 0 0 6rem;
+}
+
+.projects p{
+    margin: 0 0 0 6rem;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    margin: 2rem 2rem 0 2rem;
+}

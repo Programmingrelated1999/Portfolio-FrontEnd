@@ -10,8 +10,8 @@ const Footer = () => {
       <p>Thank you for your visit today! &copy; Kaung 2022</p>
       <div className = "footer-right">
         <p>Checkout my other profiles</p>
-        <GitHubIcon className = "profile-links" fontSize='large'/>
-        <LinkedInIcon className = "profile-links" fontSize='large'/>
+        <a href = "https://github.com/Programmingrelated1999" className = "footer-links" target = "blank"><GitHubIcon style={{ textDecoration: 'none' }} className = "profile-links" fontSize='large'/></a>
+        <a href = "https://www.linkedin.com/in/kaung-htet-myat-400015173/" className = "footer-links" target = "blank"><LinkedInIcon className = "profile-links" fontSize='large'/></a>
       </div>
     </div>
   )

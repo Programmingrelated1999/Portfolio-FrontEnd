@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+
+.contact{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+}
+
+.contact h1{
+    font-size: 4rem;
+    margin: 0 0 0 6rem;
+}
+
+.contact p{
+    margin: 2rem 0 0 6rem;
+}
+
+.contact a{
+    font-size: 1.6rem;
+    margin: 0;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: rgb(112, 234, 255);
+}
+
+.contact a:hover{
+    background-color: rgb(112, 234, 255);
+}
+
+#form-header{
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 4rem;
+}
+
+.form-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.6rem;
+}
+
+.contact-form input, textarea{
+    height: 2rem;
+    margin: 0 1rem;
+    width: 30rem;
+}
+
+.contact-form textarea{
+    height: 12rem;
+}
