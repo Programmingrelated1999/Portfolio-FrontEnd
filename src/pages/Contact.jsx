@@ -10,23 +10,25 @@ const Contact = () => {
         I am available on <a href = "https://github.com/Programmingrelated1999" target = "blank">GitHub</a> and <a href = "https://www.linkedin.com/in/kaung-htet-myat-400015173/" target = "blank">Linkedin</a>.
       </p>
       <h2 id='form-header'>Please Fill The Form</h2>
+      <h3>* Marks Required Field</h3>
       <form className = "contact-form">
         <div className = "form-item">
-            <label for="name">Name:</label>
+            <label for="name">Name <span>*</span></label>
             <input type="text" id="name" name="name" />
         </div>
         <div className = "form-item">
-            <label for="name">Email:</label>
+            <label for="name">Email <span>*</span></label>
             <input type="email" id="email" name="email" />
         </div>
         <div className = "form-item">
-            <label for="name">Subject:</label>
+            <label for="name">Subject <span>*</span></label>
             <input type="text" id="subject" name="subject" />
         </div>
         <div className = "form-item">
-            <label for="name">Message:</label>
+            <label for="name">Message <span>*</span></label>
             <textarea id="subject" name="subject" rows="6" cols="50"/>
         </div>
+        <button type = "submit">Submit</button>
       </form>
     </div>
   )
