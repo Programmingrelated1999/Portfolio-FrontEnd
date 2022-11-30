@@ -14,10 +14,6 @@
     margin: 0 0 0 6rem;
 }
 
-.projects p{
-    margin: 0 0 0 6rem;
-}
-
 .projects-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;    

@@ -7,9 +7,11 @@ const NavBar = () => {
   return (
     <>
       <div class="navbar">
+        <Link to = "/">
           <div className = "logo">
               <h1>Kaung</h1>
           </div>
+        </Link>
           <div className = "navlinks">
               <Link to = "/"><h4>About Me</h4></Link>
               <Link to = "/projects"><h4>Projects</h4></Link>
