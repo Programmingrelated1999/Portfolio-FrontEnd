@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
+import emailjs from '@emailjs/browser';  
 
 import "./Contact.css"
 
@@ -9,6 +10,8 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+
+  const form = useRef();
 
   const changeName = (event) => {
     setName(event.target.value);
@@ -39,6 +42,13 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(checkFormValid()){
+      emailjs.sendForm('service_x1x6mve', 'template_kkfc9z5', form.current, 'LPakVuiwaRGe3t9DG')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
       setName('');
       setEmail('');
       setSubject('');
@@ -60,21 +70,21 @@ const Contact = () => {
       <h2 id='form-header'>Please Fill The Form</h2>
       <h3>* Marks Required Field</h3>
       {error? <h3>{error}</h3>: null}
-      <form className = "contact-form" onSubmit={handleSubmit}>
+      <form className = "contact-form" ref = {form} onSubmit = {handleSubmit}>
         <div className = "form-item">
-            <label for="name">Name <span>*</span></label>
+            <label htmlFor="name">Name <span>*</span></label>
             <input type="text" id="name" name="name" value = {name} onChange = {changeName}/>
         </div>
         <div className = "form-item">
-            <label for="email">Email <span>*</span></label>
+            <label htmlFor="email">Email <span>*</span></label>
             <input type="email" id="email" name="email" value = {email} onChange = {changeEmail}/>
         </div>
         <div className = "form-item">
-            <label for="subject">Subject <span>*</span></label>
+            <label htmlFor="subject">Subject <span>*</span></label>
             <input type="text" id="subject" name="subject" value = {subject} onChange = {changeSubject}/>
         </div>
         <div className = "form-item">
-            <label for="message">Message <span>*</span></label>
+            <label htmlFor="message">Message <span>*</span></label>
             <textarea id="message" name="message" rows="6" cols="50" value = {message} onChange = {changeMessage}/>
         </div>
         <button type = "submit">Submit</button>

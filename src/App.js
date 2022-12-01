@@ -1,5 +1,7 @@
 import './App.css';
 
+import React from "react"
+
 import NavBar from './NavBar';
 import Footer from "./Footer";
 import AboutMe from './pages/AboutMe';
@@ -7,7 +9,6 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 import { Routes, Route } from 'react-router-dom';
-
 
 function App() {
   return (
