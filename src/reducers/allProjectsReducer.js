@@ -9,6 +9,7 @@ export const loadAllProjectsData = createAsyncThunk(
   'allProjects/loadAllUsersData',
   async(id, thunkAPI) => {
     const response = await axios.get(apiEndpoints.projectsURL);
+    console.log(apiEndpoints.projectsURL)
     return response.data;
   }
 )
@@ -17,7 +18,7 @@ export const loadAllProjectsData = createAsyncThunk(
 const allProjectsSlice = createSlice({
   name: 'allProjects',
   initialState: {
-    allProjectsData: {},
+    allProjectsData: [],
     isLoading: true,
     hasError: false
   },
