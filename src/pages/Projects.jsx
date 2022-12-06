@@ -4,6 +4,8 @@ import Project from '../projects/Project'
 import { useSelector, useDispatch } from 'react-redux';
 import { loadAllProjectsData } from '../reducers/allProjectsReducer';
 
+import Loading from './Loading/Loading';
+
 import "./Projects.css"
 
 const Projects = () => {
@@ -19,7 +21,7 @@ const Projects = () => {
   useEffect(() => {dispatch(loadAllProjectsData())}, []);
 
   if(allProjectsIsLoading || allProjects === null){
-    return <p>Loading</p>
+    return <Loading />
   }
 
   if(allProjectsHasError){
