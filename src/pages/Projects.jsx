@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { loadAllProjectsData } from '../reducers/allProjectsReducer';
 
 import Loading from './Loading/Loading';
+import Error from './Error/Error';
 
 import "./Projects.css"
 
@@ -25,7 +26,7 @@ const Projects = () => {
   }
 
   if(allProjectsHasError){
-    return <p>Has Error</p>
+    return <Error />
   }
 
   return (
