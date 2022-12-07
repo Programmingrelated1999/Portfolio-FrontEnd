@@ -32,7 +32,7 @@ const allProjectsSlice = createSlice({
     [loadAllProjectsData.fulfilled]: (state, { payload }) => {
       state.isLoading = false;
       state.hasError = false;
-      state.allUsersData = payload;
+      state.allProjectsData = payload;
     },
     [loadAllProjectsData.rejected]: (state) => {
       state.isLoading = false;

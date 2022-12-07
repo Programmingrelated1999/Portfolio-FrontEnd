@@ -29,6 +29,8 @@ const Projects = () => {
     return <Error />
   }
 
+  console.log("allProjects", allProjects);
+
   return (
     <div className='projects'>
       <h1>Projects</h1>
