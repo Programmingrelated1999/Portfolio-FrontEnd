@@ -1,0 +1,67 @@
+.project-details {
+    font-size: 1.6rem;
+}
+
+.go-back{
+    font-size: 1rem;;
+    margin: 0 0 0 3rem;
+    color: red;
+}
+
+.go-back:hover{
+    cursor: pointer;
+}
+
+.project-details-title{
+    font-size: 4rem;
+    margin: 0 0 1rem 6rem;
+}
+
+.project-details-body{
+    display: flex;
+    align-items: start;
+    margin: 0 10%;
+}
+
+.project-details-body div{
+    width: 50%;
+}
+
+.project-details-body img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.links{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.links Button{
+    margin: 1rem;
+}
+
+.project-details-body div{
+    padding-left: 1rem;
+}
+
+.incline{
+    display: inline;
+    margin-left: 1rem;
+}
+
+.project-description, .project-purpose{
+    min-width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-purpose{
+    background-color: rgb(210, 210, 210);
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+}

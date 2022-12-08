@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import "./NavBar.css"
 import { Link } from 'react-router-dom'
 
+import { useDispatch } from 'react-redux';
+import { loadAllProjectsData} from "./reducers/allProjectsReducer";
+
 const NavBar = () => {
+  //create Dispatch
+  const dispatch = useDispatch();
+  //useEffect
+  useEffect(() => {dispatch(loadAllProjectsData())}, []);
+
   return (
     <>
       <div className="navbar">
