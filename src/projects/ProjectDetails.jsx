@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Loading from '../pages/Loading/Loading';
 import Error from '../pages/Error/Error';
 import { useParams } from 'react-router-dom';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Button } from '@mui/material';
 
@@ -22,8 +22,6 @@ const ProjectDetails = () => {
   const allProjects = useSelector(state => state.allProjects.allProjectsData);
   const allProjectsIsLoading = useSelector(state => state.allProjects.isLoading);
   const allProjectsHasError = useSelector(state => state.allProjects.hasError);
-
-  const navigate = useNavigate();
 
   const {id} = useParams();
 
@@ -45,8 +43,8 @@ const ProjectDetails = () => {
         <div>
             <img src = {`${baseAPI}/${currentProject.image}`} alt = "demo"/>
             <div className='links'>
-                <a href = {`${currentProject.github}`} target = "_blank"><Button variant="contained" color = "secondary" style = {{padding: "0rem 6rem"}}>GitHub<GitHubIcon/></Button></a>
-                <a href = {`${currentProject.live}`} target = "_blank"><Button variant="contained" color = "secondary" style = {{padding: "0rem 6rem"}}>Live<LiveTvIcon/></Button></a>
+                <a href = {`${currentProject.github}`} target = "_blank" rel="noreferrer"><Button variant="contained" color = "secondary" style = {{padding: "0rem 6rem"}}>GitHub<GitHubIcon/></Button></a>
+                <a href = {`${currentProject.live}`} target = "_blank" rel="noreferrer"><Button variant="contained" color = "secondary" style = {{padding: "0rem 6rem"}}>Live<LiveTvIcon/></Button></a>
             </div>
         </div>
         <div>

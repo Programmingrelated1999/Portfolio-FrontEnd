@@ -10,7 +10,7 @@ const NavBar = () => {
   //create Dispatch
   const dispatch = useDispatch();
   //useEffect
-  useEffect(() => {dispatch(loadAllProjectsData())}, []);
+  useEffect(() => {dispatch(loadAllProjectsData())}, [dispatch]);
 
   return (
     <>
